@@ -12,6 +12,14 @@ class Days {
     var daytime = true
     let colors = [UIColor.brown, UIColor.black]
     
+    func switchDaytime() -> Bool {
+        if daytime == true{
+            return false
+        }
+        else{
+            return true
+        }
+    }
     
     func getColor() -> UIColor {
         if daytime == true {
