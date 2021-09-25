@@ -13,9 +13,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = model.getColor()
     }
 
-
+    
+    @IBAction func changeDayNight(_ sender: Any) {
+        model.switchDaytime()
+        self.view.backgroundColor = model.getColor()
+    }
+    
 }
 

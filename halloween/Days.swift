@@ -12,12 +12,12 @@ class Days {
     var daytime = true
     let colors = [UIColor.brown, UIColor.black]
     
-    func switchDaytime() -> Bool {
+    func switchDaytime() {
         if daytime == true{
-            return false
+            daytime = false
         }
         else{
-            return true
+            daytime = true
         }
     }
     
