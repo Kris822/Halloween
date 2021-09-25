@@ -10,7 +10,8 @@ import UIKit
 
 class Days {
     var daytime = true
-    let colors = [UIColor.brown, UIColor.black]
+    let colors = [UIColor.brown, UIColor.orange]
+    let textColors = [UIColor.orange, UIColor.black]
     
     func switchDaytime() {
         if daytime == true{
@@ -27,6 +28,15 @@ class Days {
         }
         else{
             return colors[1]
+        }
+    }
+    
+    func getTextColor() -> UIColor {
+        if daytime == true {
+            return textColors[0]
+        }
+        else{
+            return textColors[1]
         }
     }
     
