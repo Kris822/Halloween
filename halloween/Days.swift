@@ -40,4 +40,23 @@ class Days {
         }
     }
     
+    func isDaytimeImageVisible() -> Bool {
+        if daytime == false{
+            return true
+        }
+        else{
+            return false
+        }
+    }
+    
+    func isNighttimeImageVisible() -> Bool {
+        if daytime == true{
+            return true
+        }
+        else {
+            return false
+        }
+        
+    }
+    
 }

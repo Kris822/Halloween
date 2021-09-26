@@ -16,8 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Happy Halloween!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgr-Z0-YjU">
+                                <rect key="frame" x="110" y="75" width="195.5" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="GhL-EI-3BT">
+                                <rect key="frame" x="70" y="712" width="274.5" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pumpkin" translatesAutoresizingMaskIntoConstraints="NO" id="jCM-F4-hpA">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="1yM-eI-Wc5"/>
+                                            <constraint firstAttribute="height" constant="100" id="n9h-NO-Uzq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candy" translatesAutoresizingMaskIntoConstraints="NO" id="bhJ-dv-AEg">
+                                        <rect key="frame" x="144" y="0.0" width="130.5" height="100"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zY6-UI-qco">
+                                <rect key="frame" x="34" y="552" width="360" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spookyPumpkin" translatesAutoresizingMaskIntoConstraints="NO" id="IbE-eT-JjF">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="3bM-c8-7fr"/>
+                                            <constraint firstAttribute="height" constant="100" id="hbK-Dq-rqc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scarecrow" translatesAutoresizingMaskIntoConstraints="NO" id="14M-Yd-mO5">
+                                        <rect key="frame" x="100" y="0.0" width="260" height="100"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EI2-XZ-xGg">
-                                <rect key="frame" x="151" y="436" width="120" height="36"/>
+                                <rect key="frame" x="119" y="457" width="186" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Trick or Treat!"/>
@@ -25,41 +62,33 @@
                                     <action selector="changeDayNight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FYv-z9-oSn"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pumpkin" translatesAutoresizingMaskIntoConstraints="NO" id="jCM-F4-hpA">
-                                <rect key="frame" x="96" y="480" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="5Ed-6r-HoR">
-                                <rect key="frame" x="110" y="75" width="195.5" height="181.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Halloween!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgr-Z0-YjU">
-                                        <rect key="frame" x="0.0" y="0.0" width="195.5" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candy" translatesAutoresizingMaskIntoConstraints="NO" id="bhJ-dv-AEg">
-                                        <rect key="frame" x="32.5" y="51" width="130.5" height="130.5"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GhL-EI-3BT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="C1N-0M-Q27"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GhL-EI-3BT" secondAttribute="bottom" constant="50" id="LN5-K0-wTo"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="appButton" destination="EI2-XZ-xGg" id="Luz-iX-B20"/>
                         <outlet property="appTitle" destination="rgr-Z0-YjU" id="1bZ-Np-ptz"/>
+                        <outlet property="candyImage" destination="bhJ-dv-AEg" id="a7V-va-7oJ"/>
+                        <outlet property="pumpkinImage" destination="jCM-F4-hpA" id="lWx-vH-bqg"/>
+                        <outlet property="scarecrowImage" destination="14M-Yd-mO5" id="65K-78-4dd"/>
+                        <outlet property="spooky" destination="IbE-eT-JjF" id="WKX-RR-WsI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="-16"/>
+            <point key="canvasLocation" x="173.91304347826087" y="-16.071428571428569"/>
         </scene>
     </scenes>
     <resources>
         <image name="Pumpkin" width="475" height="444"/>
         <image name="candy" width="130.5" height="130.5"/>
+        <image name="scarecrow" width="260" height="383"/>
+        <image name="spookyPumpkin" width="155" height="155"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
