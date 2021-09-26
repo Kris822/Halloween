@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = model.getColor()
+        appTitle?.text = NSLocalizedString("app_title", comment: "the app's title")
+        appButton?.setTitle(NSLocalizedString("button_text", comment: "the text on the button"), for: .normal)
         appTitle.textColor = UIColor.orange
     }
 
