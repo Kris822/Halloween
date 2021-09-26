@@ -16,39 +16,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Halloween!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXP-zV-9RL">
-                                <rect key="frame" x="109.5" y="94" width="195.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWL-C2-18b">
-                                <rect key="frame" x="147" y="435" width="120" height="36"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
-                                <state key="normal" title="Trick or Treat!">
-                                    <color key="titleColor" systemColor="systemYellowColor"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EI2-XZ-xGg">
+                                <rect key="frame" x="151" y="436" width="120" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Trick or Treat!"/>
                                 <connections>
-                                    <action selector="changeDayNight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0tf-6C-wou"/>
+                                    <action selector="changeDayNight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FYv-z9-oSn"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pumpkin" translatesAutoresizingMaskIntoConstraints="NO" id="c8H-gR-RY6">
-                                <rect key="frame" x="20" y="654" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pumpkin" translatesAutoresizingMaskIntoConstraints="NO" id="jCM-F4-hpA">
+                                <rect key="frame" x="96" y="480" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="5Ed-6r-HoR">
+                                <rect key="frame" x="110" y="75" width="195.5" height="181.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Halloween!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgr-Z0-YjU">
+                                        <rect key="frame" x="0.0" y="0.0" width="195.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candy" translatesAutoresizingMaskIntoConstraints="NO" id="bhJ-dv-AEg">
+                                        <rect key="frame" x="32.5" y="51" width="130.5" height="130.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ZXP-zV-9RL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="GnH-83-MfA"/>
-                            <constraint firstItem="ZXP-zV-9RL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qad-SX-QeJ"/>
-                            <constraint firstItem="wWL-C2-18b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WhU-1K-0vX"/>
-                            <constraint firstItem="wWL-C2-18b" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="y81-Rw-cl4"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="appButton" destination="wWL-C2-18b" id="gC9-OQ-qa4"/>
-                        <outlet property="appTitle" destination="ZXP-zV-9RL" id="9sh-Ip-O7b"/>
+                        <outlet property="appButton" destination="EI2-XZ-xGg" id="Luz-iX-B20"/>
+                        <outlet property="appTitle" destination="rgr-Z0-YjU" id="1bZ-Np-ptz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -58,14 +59,9 @@
     </scenes>
     <resources>
         <image name="Pumpkin" width="475" height="444"/>
+        <image name="candy" width="130.5" height="130.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
