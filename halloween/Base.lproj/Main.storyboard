@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy Halloween!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXP-zV-9RL">
-                                <rect key="frame" x="109" y="94" width="196" height="30"/>
+                                <rect key="frame" x="109.5" y="94" width="195.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
@@ -32,22 +32,17 @@
                                     <action selector="changeDayNight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0tf-6C-wou"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="h" translatesAutoresizingMaskIntoConstraints="NO" id="40h-Hc-Ml6">
-                                <rect key="frame" x="87" y="709" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="wmi-Eh-J1u"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pumpkin" translatesAutoresizingMaskIntoConstraints="NO" id="c8H-gR-RY6">
+                                <rect key="frame" x="20" y="654" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZXP-zV-9RL" firstAttribute="leading" secondItem="40h-Hc-Ml6" secondAttribute="leading" id="8o7-jA-UHs"/>
                             <constraint firstItem="ZXP-zV-9RL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="GnH-83-MfA"/>
                             <constraint firstItem="ZXP-zV-9RL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qad-SX-QeJ"/>
-                            <constraint firstItem="40h-Hc-Ml6" firstAttribute="centerX" secondItem="wWL-C2-18b" secondAttribute="centerX" id="UHC-fO-mYf"/>
                             <constraint firstItem="wWL-C2-18b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WhU-1K-0vX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="40h-Hc-Ml6" secondAttribute="bottom" constant="25" id="xV1-d1-AhK"/>
                             <constraint firstItem="wWL-C2-18b" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="y81-Rw-cl4"/>
                         </constraints>
                     </view>
@@ -58,11 +53,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="262" y="-36"/>
+            <point key="canvasLocation" x="174" y="-16"/>
         </scene>
     </scenes>
     <resources>
-        <image name="h" width="64" height="72.5"/>
+        <image name="Pumpkin" width="475" height="444"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
