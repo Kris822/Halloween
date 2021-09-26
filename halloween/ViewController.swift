@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         appTitle?.text = NSLocalizedString("app_title", comment: "the app's title")
         appText?.text = NSLocalizedString("app_text", comment: "the app's text with instructions")
         appTitle.textColor = model.getTextColor()
-        appTitle.textColor = model.getTextColor()
+        appText.textColor = model.getTextColor()
         pumpkinImage.isHidden = model.isDaytimeImageVisible()
         candyImage.isHidden = model.isDaytimeImageVisible()
         candy2.isHidden = model.isDaytimeImageVisible()
